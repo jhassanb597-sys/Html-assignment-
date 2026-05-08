@@ -1,53 +1,214 @@
+<!DOCTYPE html>
 <html>
-  <head><title>Html Form</title></head>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Form</title>
+  </head>
   <body bgcolor="aqua">
 
-    <h1 align="center">Form</h1>
-    <p align="center">Contact Us</p>
-    <hr width="50%" align="center">
+    <h1 align="center">HTML Form</h1>
+    <p align="center"><b>Contact &amp; Registration Form</b></p>
+    <hr width="60%" align="center">
 
-    <form align="center">
+    <form action="#" method="post" align="center">
 
-      <b>Username:</b><br>
-      <input type="text" name="username" placeholder="Type your name" size="30">
-      <br><br>
+      <!-- ── PERSONAL INFORMATION ── -->
+      <fieldset align="left" style="width:50%; margin:auto;">
+        <legend><b>Personal Information</b></legend>
+        <br>
 
-      <b>Password:</b><br>
-      <input type="password" name="pass" placeholder="Your password" size="30">
-      <br><br>
+        <b>Full Name:</b><br>
+        <input type="text" name="fullname" placeholder="Type your full name" size="35" maxlength="50" required>
+        <br><br>
 
-      <b>Comments:</b><br>
-      <textarea name="complete" rows="4" cols="30" placeholder="Write your comments here..."></textarea>
-      <br><br>
+        <b>Username:</b><br>
+        <input type="text" name="username" placeholder="Choose a username" size="35" maxlength="20" required>
+        <br><br>
 
-      <b>Gender:</b><br>
-      <input type="radio" name="Gender" value="male"> Male
+        <b>Password:</b><br>
+        <input type="password" name="pass" placeholder="Your password" size="35" minlength="6" required>
+        <br><br>
+
+        <b>Confirm Password:</b><br>
+        <input type="password" name="confirm_pass" placeholder="Repeat your password" size="35" minlength="6" required>
+        <br><br>
+
+        <b>Gender:</b><br>
+        <input type="radio" name="Gender" value="male"> Male &nbsp;
+        <input type="radio" name="Gender" value="female"> Female &nbsp;
+        <input type="radio" name="Gender" value="other"> Other
+        <br><br>
+
+        <b>Date of Birth:</b><br>
+        <input type="date" name="dob" min="1950-01-01" max="2015-12-31">
+        <br><br>
+
+        <b>Age:</b><br>
+        <input type="number" name="age" placeholder="Your age" min="5" max="100" size="10">
+        <br><br>
+
+      </fieldset>
+
       <br>
-      <input type="radio" name="Gender" value="female"> Female
-      <br><br>
 
-      <b>Interests:</b><br>
-      <input type="checkbox" name="Interests" value="Coding"> Coding
+      <!-- ── CONTACT DETAILS ── -->
+      <fieldset align="left" style="width:50%; margin:auto;">
+        <legend><b>Contact Details</b></legend>
+        <br>
+
+        <b>Email Address:</b><br>
+        <input type="email" name="email" placeholder="example@gmail.com" size="35" required>
+        <br><br>
+
+        <b>Phone Number:</b><br>
+        <input type="tel" name="phone" placeholder="03XX-XXXXXXX" size="35" pattern="[0-9]{4}-[0-9]{7}">
+        <small>Format: 0300-1234567</small>
+        <br><br>
+
+        <b>Website / Portfolio URL:</b><br>
+        <input type="url" name="website" placeholder="https://yourwebsite.com" size="35">
+        <br><br>
+
+        <b>City:</b><br>
+        <select name="City" size="1">
+          <option value="">-- Select City --</option>
+          <option value="khi">Karachi</option>
+          <option value="lhr">Lahore</option>
+          <option value="isl">Islamabad</option>
+          <option value="gwdr">Gawader</option>
+          <option value="qta">Quetta</option>
+          <option value="psh">Peshawar</option>
+        </select>
+        <br><br>
+
+        <b>Country:</b><br>
+        <input type="text" name="country" placeholder="Type country name" size="35" list="country-list">
+        <datalist id="country-list">
+          <option value="Pakistan">
+          <option value="Afghanistan">
+          <option value="India">
+          <option value="UAE">
+          <option value="United Kingdom">
+          <option value="United States">
+          <option value="Saudi Arabia">
+        </datalist>
+        <br><br>
+
+      </fieldset>
+
       <br>
-      <input type="checkbox" name="Interests" value="Gaming"> Gaming
-      <br><br>
 
-      <b>City:</b><br>
-      <select name="City">
-        <option value="">-- Select City --</option>
-        <option value="khi">Karachi</option>
-        <option value="gwdr">Gawader</option>
-        <option value="qta">Quetta</option>
-      </select>
-      <br><br>
+      <!-- ── INTERESTS & SKILLS ── -->
+      <fieldset align="left" style="width:50%; margin:auto;">
+        <legend><b>Interests &amp; Skills</b></legend>
+        <br>
 
-      <input type="submit" value="Send Us">
+        <b>Interests (select all that apply):</b><br>
+        <input type="checkbox" name="interest" value="Coding"> Coding &nbsp;
+        <input type="checkbox" name="interest" value="Gaming"> Gaming &nbsp;
+        <input type="checkbox" name="interest" value="Design"> Design
+        <br>
+        <input type="checkbox" name="interest" value="Reading"> Reading &nbsp;
+        <input type="checkbox" name="interest" value="Sports"> Sports &nbsp;
+        <input type="checkbox" name="interest" value="Music"> Music
+        <br><br>
+
+        <b>Education Level:</b><br>
+        <select name="education">
+          <option value="">-- Select Level --</option>
+          <option value="matric">Matric</option>
+          <option value="inter">Intermediate</option>
+          <option value="bachelors">Bachelors</option>
+          <option value="masters">Masters</option>
+          <option value="phd">PhD</option>
+        </select>
+        <br><br>
+
+        <b>Favourite Programming Language:</b><br>
+        <input type="radio" name="lang" value="html"> HTML &nbsp;
+        <input type="radio" name="lang" value="css"> CSS &nbsp;
+        <input type="radio" name="lang" value="js"> JavaScript &nbsp;
+        <input type="radio" name="lang" value="python"> Python
+        <br><br>
+
+        <b>Skills Rating (1 to 10):</b><br>
+        1 <input type="range" name="skill_rating" min="1" max="10" value="5"> 10
+        <br><br>
+
+        <b>Favourite Color:</b><br>
+        <input type="color" name="fav_color" value="#00bcd4">
+        <br><br>
+
+      </fieldset>
+
+      <br>
+
+      <!-- ── ADDITIONAL INFO ── -->
+      <fieldset align="left" style="width:50%; margin:auto;">
+        <legend><b>Additional Information</b></legend>
+        <br>
+
+        <b>Preferred Contact Time:</b><br>
+        <input type="time" name="contact_time" min="08:00" max="20:00">
+        <br><br>
+
+        <b>Upload Profile Picture:</b><br>
+        <input type="file" name="profile_pic" accept="image/*">
+        <br><br>
+
+        <b>Upload Resume (PDF):</b><br>
+        <input type="file" name="resume" accept=".pdf,.doc,.docx">
+        <br><br>
+
+        <b>Your Message / Comments:</b><br>
+        <textarea name="comments" rows="5" cols="40" placeholder="Write your message here..." maxlength="500"></textarea>
+        <br>
+        <small>Maximum 500 characters</small>
+        <br><br>
+
+        <b>How did you hear about us?</b><br>
+        <select name="source" multiple size="4">
+          <option value="google">Google Search</option>
+          <option value="youtube">YouTube</option>
+          <option value="friend">Friend / Colleague</option>
+          <option value="facebook">Facebook</option>
+          <option value="twitter">Twitter / X</option>
+        </select>
+        <br>
+        <small>Hold Ctrl to select multiple</small>
+        <br><br>
+
+        <b>Terms &amp; Conditions:</b><br>
+        <input type="checkbox" name="terms" value="agree" required>
+        I agree to the <u>Terms and Conditions</u>
+        <br><br>
+
+        <b>Subscribe to Newsletter:</b><br>
+        <input type="checkbox" name="newsletter" value="yes" checked>
+        Yes, send me updates
+        <br><br>
+
+        <!-- Hidden field (not visible, but sent with form data) -->
+        <input type="hidden" name="form_id" value="contact-form-2026">
+
+      </fieldset>
+
+      <br>
+
+      <!-- ── BUTTONS ── -->
+      <input type="submit" value="&#10003; Send Form">
       &nbsp;&nbsp;
-      <input type="reset" value="Clear">
+      <input type="reset" value="&#10005; Clear All">
 
     </form>
 
-    <hr width="50%" align="center">
+    <br>
+    <hr width="60%" align="center">
+
+    <hr width="60%" align="center">
+    <p align="center"></p>
+    <p align="center"><a href="https://facebook.com" target="_blank">Facebook</a></p>
+    <br>
 
   </body>
 </html>
