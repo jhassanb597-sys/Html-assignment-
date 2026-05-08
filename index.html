@@ -1,77 +1,366 @@
-<!doctype html><html><head><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
-  <meta name="description" content="this is web devolopment site">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My HTML Course — Learning Web Development">
   <meta name="author" content="Jahangir">
-</head><title>My html course</title><link rel="stylesheet" href="style.css"></head>
-
-
-
+  <title>My HTML Course</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
 <body>
-    <!-- 1. HEADER: Logo + Main heading -->
-    <header>
-        <h1>Yoko's Kitchen</h1>
-        <p style="color:aqua;">Japanese Cooking Classes</p>
-     <!-- 2. NAV: Menu links -->
-    <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Classes</a></li>
-            <li><a href="">Contact</a></li>
-        </ul> <button>click me</button>
-    </nav></header>
 
-    <!-- 3. MAIN: Page ka main content -->
-    <main>
-        <!-- 4. ARTICLE: Ek mukammal post -->
-        <article>
-            <h2>Japanese Vegetarian</h2>
-            <p class="coursp">Five week course in London...</p>
-            
-            <!-- 5. SECTION: Article ke andar chote hisse -->
-            <section>
-                <h3>Week One</h3>
-                <p class="pclass">We will introduce you to...</p>
-            </section>
-            
-            <!-- 6. FIGURE: Image + Caption -->
-            <figure>
-                <img src="bok-choi.jpg" alt="Bok Choi">
-                <figcaption>Bok Choi</figcaption>
-            </figure>
-        </article>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="top">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="brand-icon">&#60;/&#62;</span>
+        <span class="brand-name">JAHANGIR</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#top" class="nav-link">Home</a>
+        <a href="#html-section" class="nav-link">HTML</a>
+        <a href="#css-section" class="nav-link">CSS</a>
+        <a href="#js-section" class="nav-link">JS</a>
+      </nav>
+    </div>
+  </header>
 
-        <!-- 7. ASIDE: Side bar – extra info -->
-        <aside>
-            <h2>Popular Recipes</h2>
-            <a href="">Yakitori</a>
-            <a href="">Tsukune</a>
-        </aside>
-    </main>
-    <div id="box"><p>this para for css hadding</p></div>
-    <button>contact us</button>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <h1 class="hero-title">Learning Web Development</h1>
+    <p class="hero-sub">A hands-on journey through HTML, CSS &amp; JavaScript</p>
+    <div class="hero-buttons">
+      <a href="periodic-table.html" class="btn btn-primary">HTML Periodic-Table</a>
+      <a href="form2.html" class="btn btn-outline">HTML Form</a>
+    </div>
+  </section>
 
+  <!-- ===== SECTION CARDS ROW ===== -->
+  <div class="section-cards">
+    <a href="#html-section" class="card card-html">
+      <span class="card-icon">&#60;&#47;&#62;</span>
+      <h3>HTML</h3>
+      <p>Structure &amp; Markup</p>
+    </a>
+    <a href="#css-section" class="card card-css">
+      <span class="card-icon">&#35;</span>
+      <h3>CSS</h3>
+      <p>Styling &amp; Layout</p>
+    </a>
+    <a href="#js-section" class="card card-js">
+      <span class="card-icon">JS</span>
+      <h3>JavaScript</h3>
+      <p>Logic &amp; Interaction</p>
+    </a>
+  </div>
 
+  <!-- ===== HTML SECTION ===== -->
+  <section id="html-section" class="topic-section">
+    <div class="section-header">
+      <span class="section-tag">&lt;html&gt;</span>
+      <h2 class="section-title">HTML — HyperText Markup Language</h2>
+      <p class="section-desc">The skeleton of every webpage. HTML gives structure and meaning to content.</p>
+    </div>
 
+    <div class="content-box">
+      <h3>Headings</h3>
+      <p>HTML has six heading levels from <code>&lt;h1&gt;</code> (largest) to <code>&lt;h6&gt;</code> (smallest).</p>
+      <h1>Heading h1</h1>
+      <h2>Heading h2</h2>
+      <h6>Heading h6 — the smallest heading</h6>
+    </div>
 
-<h1 style="text-decoration:underline;">heading level h1</h1> <h2>heading level h2</h2><h6>heading level h6 here are six heading types from 1 to 6</h6><h1>this is my first html project</h1><p>this is short paragraph from p tag </p><p class="pclass">we can put lots of p tags for paragraph spacing means every tags give  paragraph spacing visualy</p><p>we can use b tag for bold i tag for italic and strong tag for also bold but it is also for importancy, means tells browser it is important bold text. now we start woth bold paragraph</p><p><b>this is the bold paragraph</b></p><p><i>this is italic paragraph</i><p><strong>this is strong paragraph but it looks like bold but its used for browser to give it importancy</strong></p></p><p><em>this is emphasized text it looks like italic but used for importancy</em></p><h1>list</h1><h3>ordered list</h3><p>the ordered list shows number in list like step 1 step 2 or step 3 etc</p><p>now i m going make a list of daily routine</p><ol><li>morning time activies</li><li>evening time activies</li><li>night activities</li></ol><hr></p><h3>unordered list</h3><p>when we dont need shows numbers just like use bullet points in this list we use bullets</p><ul><li>we use li tags here</li><li>for unordered ol tag is used</li><li>inside ol what ever points we have we use li tag</li></ul><h3>definition list</h3><p>dictionary typesof listing every tag define anotherlike</p><dl><dt>here dt tags is used</dt><dd>here dd tag is used</dd><dt><em>another hadding</em> </dt><dd>now its definition</dd></dl><h3>nested lists</h3> <p>nested like unordered listing type we use unordered listing tags here but in defferent ways like all < li > tags comes into < ul > tags but here we can us ul tag multiple time inside ul tag like ul for nested then li for list then ul with li make it nested list</ul></p><ul>nested <li>lists <ul><li>these are also lists</li><li>but these are nested list</li></ul></ul>
-<h1>links</h1><h3>basic link< a >tag</h3><p>href="hypertext refference" we use href inside < α > tag for links</p><p>connectes pages inside website like open another page or another website google,gmail,youtub etc</p><p><a href="https://google.com">google</a></p><a href="https://youtub.com">youtub</a><p>in this link i used target attribute for to open link into next tab<a href="https://facebook.com" target="_blank">facebook</a></p>now we use over own file link <a href="Style.css">css file</a><p> for email link <a href="gmail:jhassanb597@gmail.com">my gmail</a><p>now i m going to talk about the that links which are does open external file or page this link target specific section or hadding or paragraph or button in the same page here i m going first give an id to bottom hadding this link will take you to the end of page or target last heading<a href="#bottom">last section</a><p>now for above section<a href="#top">go top</a></p></p></p><hr><h1>images</h1><p>now i will put images using < img > tag for images but remember one thing here there is no closing tag for this we just used attributes in the opening tag of image < img > src for image source alt for alternate text of images </p><p>just a image<figure><img src="mypic.png" alt="id card"><figcaption>my picture</figcaption></figure></p><p>setting image size just give width atribute hieght automatically taken<img src="fastnet.jpg" alt="fastnet" width="200"></p><p>now we will give link to the image here we use < a > tag means links tag inside it then we put image tag or image sources </p><p align="center"><a href="https://facebook.com" target="_blank"><figure><img src="smitcard.jpg" alt="fb link" width="200"></figure></a></p> <p>now we use figure and caption for images here</p><figure><img src="smitcard.jpg" alt="card" width="200"><figcaption>my student card</figcaption></figure> now we are going to do table.<h align"center" color="green"><hr><h2 align="center"><strong>table</strong></h2><table border="1"><tr><th>month</th>
-<th>savings</th></tr><tr><td>January</td><td>100$</td></tr><tr><td>february</td><td>200$</td></tr></table><table border="1"><thead><tr><th>Item</th><th>Price</th></tr></thead><tbody><tr><td>Mobile</td><td>30000</td></tr><tr><td>Charger</td><td>1000</td></tr></tbody><tfoot><tr><td>Total</td><td>31000</td></tr></tfoot></table><table border="1"><tr><th>Name</th><th colspan="2">Phone</th></tr><tr><td>Ali</td><td>03001111222</td><td>0300055522</td></tr></table><h2 align="center">form</h2><div border="1" radius="20">form<p>Username:<input type="text" name="username" placeholder="type your name"</p><p>Password:<input type="password" name="pass" placeholder="your pass"></p><p>Your Comments</p><textarea name="complete"></textarea><p>Gender</p><input type="radio" name="Gender" value="male">Male<br><input type="radio" name="Gender" value="female">Female
-<p>Interestes</p><input type="checkbox"name="Interestes" value="Coding">Coding<br><input type="checkbox" name="Interestes" value="gaming">Gamimg
-<p>City:</p><select name="City"><option value="khi">Karachi</option>
-<option value="gwdr">Gawader</option> <option value="qta">Quetta</option></select> <input type="submit" value="send us"></form></div>
-<!--extra markup-->
-<h2 align="center" color="pink"><em>Extra Markup</em></h2><p>div make section for block</p><div id="main-contents"><em>here we target main content like a specific section like div id header div id main content div id footer etc,<span style="color:gold">span make groups inside line like text paragraph line,  </span></em><p>iframe another websites contents be embeded with iframe tag we some site provide thier iframe for every one,like youtub,</p>
-<iframe width="250" height="250" src="https://www.youtube.com/embed/"></iframe><iframe 
-  width="250" 
-  height="250" 
-  src="https://www.youtube.com/embed/dQw4w9WgXcQ">
-</iframe></div><h2 align="center">video & audio</h2><h3>Video</h3> <video src="https://www.youtube.com" width="300" controls="">click to play video</video><h2 align="center">audio</h2><audio src="MohsenYeganeh-BehetGholMidam (IPromiseyou).m4a" controls=""></audio>
-<hr><p><qout>there are lots of studem in our class are practicing html and learning advance web app devolopment.
-so i m also learning to complete My html practicing, this is my basic html foundation</p><hr> <h1 id="bottom">Further goes inside html</h1>
-<p id="pl"><b><strong><em>here i have learned that how to put basic structure in html.i have took 4<sup>th</sup> class last weak i have understood core concept of basic structure like elements tags head body etc. </em></strong></b><blockquote id="blockl">like doctype html in html we put head inside head we put title then close head then we start woth the body everything we see in page comes inside body like headings and paragraph forms and tables images all hte thing which we can see in our page that are putted into body tag </blockquote></blockquote></p>!-- 8. FOOTER: Copyright etc -->
-    <footer>
-        &copy; 2026 Yoko's Kitchen
-    </footer>
+    <div class="content-box">
+      <h3>Text Formatting</h3>
+      <p><b>Bold</b> uses <code>&lt;b&gt;</code> tag.</p>
+      <p><i>Italic</i> uses <code>&lt;i&gt;</code> tag.</p>
+      <p><strong>Strong</strong> uses <code>&lt;strong&gt;</code> — tells the browser this text is important.</p>
+      <p><em>Emphasized</em> uses <code>&lt;em&gt;</code> — italic with semantic importance.</p>
+    </div>
 
-    <!-- 9. DIV: Jab koi semantic tag na bache to ye use karo -->
-    <div class="advert">Contact us for details</div></body></html>
+    <div class="content-box">
+      <h3>Lists</h3>
+      <p>Ordered list (numbered steps):</p>
+      <ol>
+        <li>Morning time activities</li>
+        <li>Evening time activities</li>
+        <li>Night activities</li>
+      </ol>
+      <p>Unordered list (bullet points):</p>
+      <ul>
+        <li>We use <code>&lt;li&gt;</code> tags here</li>
+        <li>For unordered, <code>&lt;ul&gt;</code> tag is used</li>
+        <li>Each point uses an <code>&lt;li&gt;</code> tag</li>
+      </ul>
+      <p>Definition list:</p>
+      <dl>
+        <dt><strong>&lt;dt&gt; — Definition Term</strong></dt>
+        <dd>The term being defined</dd>
+        <dt><em>&lt;dd&gt; — Definition Description</em></dt>
+        <dd>The meaning or description of that term</dd>
+      </dl>
+    </div>
+
+    <div class="content-box">
+      <h3>Links</h3>
+      <p>The <code>&lt;a href=""&gt;</code> tag creates hyperlinks.</p>
+      <p><a href="https://google.com" target="_blank">Google</a> — opens in same tab</p>
+      <p><a href="https://youtube.com" target="_blank">YouTube</a> — opens in new tab (target="_blank")</p>
+      <p><a href="https://facebook.com" target="_blank">Facebook</a></p>
+      <p><a href="mailto:jhassanb597@gmail.com">Email me</a> — mailto: link</p>
+      <p><a href="#top">↑ Back to top</a> — anchor link (same page)</p>
+    </div>
+
+    <div class="content-box">
+      <h3>Images</h3>
+      <p>The <code>&lt;img&gt;</code> tag is self-closing. It uses <code>src</code> for source and <code>alt</code> for alternate text.</p>
+      <figure>
+        <img src="mypic.png" alt="My Picture" width="150" onerror="this.style.display='none'">
+        <figcaption>My Picture — using &lt;figure&gt; and &lt;figcaption&gt;</figcaption>
+      </figure>
+    </div>
+
+    <div class="content-box">
+      <h3>Tables</h3>
+      <table class="styled-table">
+        <thead>
+          <tr><th>Month</th><th>Savings</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>January</td><td>$100</td></tr>
+          <tr><td>February</td><td>$200</td></tr>
+        </tbody>
+      </table>
+
+      <table class="styled-table" style="margin-top:16px;">
+        <thead>
+          <tr><th>Item</th><th>Price</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Mobile</td><td>30,000</td></tr>
+          <tr><td>Charger</td><td>1,000</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td><strong>Total</strong></td><td><strong>31,000</strong></td></tr>
+        </tfoot>
+      </table>
+
+      <table class="styled-table" style="margin-top:16px;">
+        <thead>
+          <tr><th>Name</th><th colspan="2">Phone Numbers</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ali</td><td>0300-1111222</td><td>0300-055522</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="content-box">
+      <h3>Forms</h3>
+      <form class="demo-form" action="#" method="post">
+        <label>Username:<br>
+          <input type="text" name="username" placeholder="Type your name">
+        </label><br><br>
+        <label>Password:<br>
+          <input type="password" name="pass" placeholder="Your password">
+        </label><br><br>
+        <label>Comments:<br>
+          <textarea name="comments" rows="3" placeholder="Write something..."></textarea>
+        </label><br><br>
+        <p>Gender:</p>
+        <input type="radio" name="Gender" value="male"> Male<br>
+        <input type="radio" name="Gender" value="female"> Female<br><br>
+        <p>Interests:</p>
+        <input type="checkbox" name="Interests" value="Coding"> Coding<br>
+        <input type="checkbox" name="Interests" value="Gaming"> Gaming<br><br>
+        <label>City:<br>
+          <select name="City">
+            <option value="khi">Karachi</option>
+            <option value="gwdr">Gawader</option>
+            <option value="qta">Quetta</option>
+          </select>
+        </label><br><br>
+        <input type="submit" value="Send ➤">
+      </form>
+    </div>
+
+    <div class="content-box">
+      <h3>Extra Markup — div, span, iframe</h3>
+      <p><code>&lt;div&gt;</code> creates a block-level section. <code>&lt;span&gt;</code> groups inline content.</p>
+      <div id="main-contents">
+        <em>This is a <code>&lt;div&gt;</code> — it wraps block content like sections.
+        <span style="color:gold"> This is a &lt;span&gt; — it styles inline text within a line.</span></em>
+      </div>
+      <p style="margin-top:12px;">YouTube iframe embed example:</p>
+      <iframe width="100%" height="220" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube embed" allowfullscreen style="border-radius:8px; border:none; max-width:400px; display:block;"></iframe>
+    </div>
+
+    <!-- VIEW HTML STRUCTURE BUTTON -->
+    <div class="content-box">
+      <h3>View HTML Page Structure</h3>
+      <p>Click below to see the basic HTML skeleton of this page:</p>
+      <details class="structure-toggle">
+        <summary class="btn btn-primary" style="display:inline-block; cursor:pointer;">&#60;/&#62; Show HTML Structure</summary>
+        <pre class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" ...&gt;
+    &lt;title&gt;My HTML Course&lt;/title&gt;
+    &lt;link rel="stylesheet" href="Style.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    &lt;header class="navbar"&gt;
+      &lt;nav&gt; ... &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;section class="hero"&gt; ... &lt;/section&gt;
+
+    &lt;section id="html-section"&gt;
+      &lt;!-- Headings, Lists, Links,
+           Images, Tables, Forms --&gt;
+    &lt;/section&gt;
+
+    &lt;section id="css-section"&gt;
+      &lt;!-- Selectors, Box Model,
+           Display, Colors --&gt;
+    &lt;/section&gt;
+
+    &lt;section id="js-section"&gt;
+      &lt;!-- Coming soon... --&gt;
+    &lt;/section&gt;
+
+    &lt;footer&gt; ... &lt;/footer&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+      </details>
+    </div>
+
+  </section>
+
+  <!-- ===== CSS SECTION ===== -->
+  <section id="css-section" class="topic-section css-bg">
+    <div class="section-header">
+      <span class="section-tag">#css</span>
+      <h2 class="section-title">CSS — Cascading Style Sheets</h2>
+      <p class="section-desc">CSS makes the page beautiful. It controls colors, fonts, spacing, layout and animations.</p>
+    </div>
+
+    <div class="content-box">
+      <h3>Selectors</h3>
+      <p>CSS selects elements using tags, classes (<code>.classname</code>), and IDs (<code>#idname</code>).</p>
+      <ul>
+        <li><code>p { color: white; }</code> — selects all <code>&lt;p&gt;</code> tags</li>
+        <li><code>.pclass { background: pink; }</code> — selects by class</li>
+        <li><code>#boldp { font-weight: bold; }</code> — selects by ID</li>
+      </ul>
+    </div>
+
+    <div class="content-box">
+      <h3>Font Weight &amp; Size</h3>
+      <p id="boldp">Bold text — font-weight: bold</p>
+      <p id="lightnessp">Light text — font-weight: lighter</p>
+      <p id="fontrange">font-weight: 300 (thin)</p>
+      <p id="boldmax">font-weight: 900 (black / heaviest)</p>
+      <p id="sizep">font-size: 25px — larger than default 16px</p>
+    </div>
+
+    <div class="content-box">
+      <h3>Display Property</h3>
+      <p><code>display</code> controls how elements are laid out on the page.</p>
+      <div id="display">This div uses display: inline-block</div>
+      <button>Inline Button</button>
+      <p style="margin-top:10px;">The <code>&lt;div&gt;</code> is normally block-level. With <code>display: inline-block</code> it sits beside other inline elements like this button.</p>
+    </div>
+
+    <div class="content-box">
+      <h3>Colors &amp; Backgrounds</h3>
+      <div class="color-demo-row">
+        <div id="d1">Aqua</div>
+        <div id="d2">Yellow</div>
+        <div id="d3">Pink</div>
+      </div>
+      <p style="margin-top:12px;">Colors can be set by name, hex <code>#ff6600</code>, RGB <code>rgb(200,50,90)</code>, or RGBA with opacity <code>rgba(0,0,0,0.5)</code>.</p>
+    </div>
+
+    <div class="content-box">
+      <h3>Anchor / Link Styling</h3>
+      <p>CSS removes the default underline from links using <code>text-decoration: none</code>.</p>
+      <a href="https://facebook.com" target="_blank">Facebook — styled link (no underline)</a>
+    </div>
+
+    <!-- VIEW CSS STRUCTURE BUTTON -->
+    <div class="content-box">
+      <h3>View CSS Structure</h3>
+      <details class="structure-toggle">
+        <summary class="btn btn-css" style="display:inline-block; cursor:pointer;">&#35; Show CSS Structure</summary>
+        <pre class="code-block">
+/* Global Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Body */
+body { font-family: ...; background-color: ...; }
+
+/* Navbar */
+.navbar { display: flex; justify-content: space-between; }
+
+/* Sections */
+.topic-section { padding: 60px 20px; }
+
+/* Cards */
+.card { border-radius: 12px; padding: 24px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links { flex-direction: column; }
+  .section-cards { flex-direction: column; }
+}
+        </pre>
+      </details>
+    </div>
+
+  </section>
+
+  <!-- ===== JS SECTION ===== -->
+  <section id="js-section" class="topic-section js-bg">
+    <div class="section-header">
+      <span class="section-tag">JS</span>
+      <h2 class="section-title">JavaScript — Coming Soon</h2>
+      <p class="section-desc">JavaScript brings interactivity and logic to the web. This section will be filled as you progress through the course.</p>
+    </div>
+
+    <div class="js-coming-soon">
+      <div class="js-icon">JS</div>
+      <h3>Topics you'll learn:</h3>
+      <ul class="js-topics">
+        <li>Variables &amp; Data Types</li>
+        <li>Functions &amp; Events</li>
+        <li>DOM Manipulation</li>
+        <li>Loops &amp; Conditions</li>
+        <li>Fetch API &amp; JSON</li>
+      </ul>
+      <a href="#html-section" class="btn btn-primary" style="margin-top:24px; display:inline-block;">← Review HTML First</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <span class="brand-icon">&#60;/&#62;</span>
+      <p>Made with HTML &amp; CSS &nbsp;|&nbsp; Jahangir's Web Dev Course &nbsp;|&nbsp; &copy; 2026</p>
+      <nav class="footer-links">
+        <a href="#html-section">HTML</a>
+        <a href="#css-section">CSS</a>
+        <a href="#js-section">JS</a>
+        <a href="#top">↑ Top</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
